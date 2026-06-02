@@ -180,7 +180,7 @@ function Portfolio() {
                   </div>
                   <div className="text-sm text-neutral-500 sm:text-right">
                     <div>{job.dates}</div>
-                    <div>{job.location}</div>
+                    {job.location && <div>{job.location}</div>}
                   </div>
                 </div>
                 <ul className="mt-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-neutral-700 marker:text-neutral-400">
