@@ -28,8 +28,8 @@ const experience = [
   {
     company: "Amazon Web Services (AWS)",
     role: "Software Development Engineer",
-    dates: "2024 — Present",
-    location: "Vancouver, BC",
+    dates: "2023 — 2025",
+    location: "",
     bullets: [
       "Build and operate distributed services powering AWS infrastructure at global scale.",
       "Own features end-to-end across design, implementation, deployment, and on-call.",
@@ -39,8 +39,8 @@ const experience = [
   {
     company: "Amazon Web Services (AWS)",
     role: "Software Development Engineer Intern",
-    dates: "Summer 2023",
-    location: "Vancouver, BC",
+    dates: "Summer 2022",
+    location: "",
     bullets: [
       "Designed and shipped a backend service used by internal teams to streamline a manual workflow.",
       "Returned a full-time offer based on launch impact and operational quality.",
@@ -49,8 +49,8 @@ const experience = [
   {
     company: "Shopify",
     role: "Backend Developer Intern",
-    dates: "2022",
-    location: "Toronto, ON",
+    dates: "Fall, 2021",
+    location: "",
     bullets: [
       "Built backend features in Ruby on Rails supporting merchant-facing commerce flows.",
       "Improved reliability and observability of a high-traffic service with new metrics and alerts.",
@@ -59,8 +59,8 @@ const experience = [
   {
     company: "Flipp",
     role: "Software Engineer Intern",
-    dates: "2021",
-    location: "Toronto, ON",
+    dates: "Winter, 2021",
+    location: "",
     bullets: [
       "Delivered new features across the consumer shopping app used by millions of users.",
       "Collaborated with cross-functional teams on A/B-tested improvements to user engagement.",
@@ -69,18 +69,18 @@ const experience = [
   {
     company: "Verto Health",
     role: "Software Engineer Intern",
-    dates: "2020",
-    location: "Toronto, ON",
+    dates: "Fall, 2020",
+    location: "",
     bullets: [
       "Developed healthcare workflow tooling used by clinicians during the COVID-19 response.",
       "Shipped frontend and backend features on a fast-moving, mission-critical product.",
     ],
   },
   {
-    company: "RBC",
+    company: "Royal Bank of Canada",
     role: "Software Developer Intern",
-    dates: "2019",
-    location: "Toronto, ON",
+    dates: "Winter 2020",
+    location: "",
     bullets: [
       "Contributed to internal banking platforms with a focus on data accuracy and automation.",
       "First professional engineering role; established strong foundations in code review and testing.",
@@ -114,9 +114,8 @@ function Portfolio() {
             Hemant Bhanot
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">
-            I build reliable, scalable backend systems. Currently a Software
-            Development Engineer at AWS, with prior experience at Shopify,
-            Flipp, Verto Health, and RBC.
+            I build reliable & scalable backend systems. Previously a SDE at AWS
+            building infrastructure/systems for AWS graph & key-value databases
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild>
@@ -157,7 +156,7 @@ function Portfolio() {
               Across roles at AWS, Shopify, Flipp, Verto Health, and RBC, I've
               owned features end-to-end — from design and implementation to
               deployment and on-call — and worked closely with product, design,
-              and other engineers to deliver outcomes that matter.
+              and other engineers to deliver impact for customers
             </p>
           </div>
         </section>
@@ -181,7 +180,7 @@ function Portfolio() {
                   </div>
                   <div className="text-sm text-neutral-500 sm:text-right">
                     <div>{job.dates}</div>
-                    <div>{job.location}</div>
+                    {job.location && <div>{job.location}</div>}
                   </div>
                 </div>
                 <ul className="mt-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-neutral-700 marker:text-neutral-400">
@@ -212,7 +211,7 @@ function Portfolio() {
               </p>
             </div>
             <div className="text-sm text-neutral-500 sm:text-right">
-              Toronto, ON
+              {"\n"}
             </div>
           </div>
         </section>
