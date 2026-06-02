@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, FileDown, MapPin } from "lucide-react";
+import { Mail, Linkedin, FileDown } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -118,10 +118,6 @@ function Portfolio() {
             Development Engineer at AWS, with prior experience at Shopify,
             Flipp, Verto Health, and RBC.
           </p>
-          <div className="mt-5 flex items-center gap-2 text-sm text-neutral-500">
-            <MapPin className="h-4 w-4" />
-            <span>Vancouver, BC</span>
-          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild>
               <a href="mailto:hemant@example.com">
