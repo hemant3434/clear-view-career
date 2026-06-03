@@ -183,6 +183,14 @@ function Portfolio() {
               </li>
             ))}
           </ol>
+          <div className="mt-10">
+            <Button asChild variant="ghost">
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-4 w-4" />
+                View resume
+              </a>
+            </Button>
+          </div>
         </section>
 
         <hr className="border-neutral-200" />
