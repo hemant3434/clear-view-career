@@ -32,8 +32,6 @@ const experience = [
     location: "",
     bullets: [
       "Build and operate distributed services powering AWS infrastructure at global scale.",
-      "Own features end-to-end across design, implementation, deployment, and on-call.",
-      "Partner with senior engineers and PMs to ship customer-impacting improvements each sprint.",
     ],
   },
   {
@@ -43,7 +41,6 @@ const experience = [
     location: "",
     bullets: [
       "Designed and shipped a backend service used by internal teams to streamline a manual workflow.",
-      "Returned a full-time offer based on launch impact and operational quality.",
     ],
   },
   {
@@ -53,7 +50,6 @@ const experience = [
     location: "",
     bullets: [
       "Built backend features in Ruby on Rails supporting merchant-facing commerce flows.",
-      "Improved reliability and observability of a high-traffic service with new metrics and alerts.",
     ],
   },
   {
@@ -63,7 +59,6 @@ const experience = [
     location: "",
     bullets: [
       "Delivered new features across the consumer shopping app used by millions of users.",
-      "Collaborated with cross-functional teams on A/B-tested improvements to user engagement.",
     ],
   },
   {
@@ -73,7 +68,6 @@ const experience = [
     location: "",
     bullets: [
       "Developed healthcare workflow tooling used by clinicians during the COVID-19 response.",
-      "Shipped frontend and backend features on a fast-moving, mission-critical product.",
     ],
   },
   {
@@ -83,7 +77,6 @@ const experience = [
     location: "",
     bullets: [
       "Contributed to internal banking platforms with a focus on data accuracy and automation.",
-      "First professional engineering role; established strong foundations in code review and testing.",
     ],
   },
 ];
@@ -119,13 +112,13 @@ function Portfolio() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild>
-              <a href="mailto:hemant@example.com">
+              <a href="mailto:hemant.bhanot01@gmail.com">
                 <Mail className="h-4 w-4" />
                 Email me
               </a>
             </Button>
             <Button asChild variant="outline">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/hemant-bhanot/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
                 LinkedIn
               </a>
@@ -209,6 +202,9 @@ function Portfolio() {
                 Honours Bachelor of Science, Computer Science — Graduated with
                 Distinction
               </p>
+              <p className="text-sm text-neutral-600">
+                Teaching Assistant for <a href="https://utsc.calendar.utoronto.ca/course/cscc01h3" target="_blank">Intro to Software Engineering (CSCC01)</a> and <a href="https://utsc.calendar.utoronto.ca/course/cscd01h3" target="_blank">Engineering Large Software Systems (CSCD01)</a>
+              </p>
             </div>
             <div className="text-sm text-neutral-500 sm:text-right">
               {"\n"}
@@ -225,18 +221,18 @@ function Portfolio() {
           </h2>
           <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-neutral-800">
             I'm always open to conversations with hiring teams and engineering
-            leaders. The fastest way to reach me is email.
+            leaders. The fastest way to reach me is email or a linkedin message.
           </p>
           <div className="mt-6 flex flex-wrap gap-6 text-sm">
             <a
-              href="mailto:hemant@example.com"
+              href="mailto:hemant.bhanot01@gmail.com"
               className="inline-flex items-center gap-2 text-neutral-900 underline underline-offset-4 hover:text-neutral-600"
             >
               <Mail className="h-4 w-4" />
-              hemant@example.com
+              hemant.bhanot01@gmail.com
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/hemant-bhanot/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-neutral-900 underline underline-offset-4 hover:text-neutral-600"
