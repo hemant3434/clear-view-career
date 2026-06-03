@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, FileDown, ExternalLink } from "lucide-react";
+import { Mail, Linkedin, ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -162,7 +162,15 @@ function Portfolio() {
           <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500">
             Experience
           </h2>
-          <ol className="mt-8 space-y-12">
+          <div className="mt-6">
+            <Button asChild variant="ghost">
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-4 w-4" />
+                View resume
+              </a>
+            </Button>
+          </div>
+          <ol className="mt-10 space-y-12">
             {experience.map((job) => (
               <li key={`${job.company}-${job.dates}`}>
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
@@ -183,14 +191,6 @@ function Portfolio() {
               </li>
             ))}
           </ol>
-          <div className="mt-10">
-            <Button asChild variant="ghost">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-4 w-4" />
-                View resume
-              </a>
-            </Button>
-          </div>
         </section>
 
         <hr className="border-neutral-200" />
