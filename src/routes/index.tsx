@@ -166,7 +166,7 @@ function Portfolio() {
             <Button asChild variant="ghost">
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4" />
-                View resume
+                View Resume
               </a>
             </Button>
           </div>
