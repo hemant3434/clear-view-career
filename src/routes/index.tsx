@@ -180,7 +180,7 @@ function Portfolio() {
                     {job.location && <div>{job.location}</div>}
                   </div>
                 </div>
-                <p className="mt-4 text-[15px] leading-relaxed text-neutral-700">
+                <p className="mt-4 text-[15px] italic leading-relaxed text-neutral-700">
                   {job.bullets[0]}
                 </p>
               </li>
