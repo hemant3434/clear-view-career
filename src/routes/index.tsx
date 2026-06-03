@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, FileDown } from "lucide-react";
+import { Mail, Linkedin, FileDown, ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -130,12 +130,6 @@ function Portfolio() {
                 LinkedIn
               </a>
             </Button>
-            <Button asChild variant="ghost">
-              <a href="/resume.pdf" download>
-                <FileDown className="h-4 w-4" />
-                Download resume
-              </a>
-            </Button>
           </div>
         </section>
 
@@ -183,14 +177,20 @@ function Portfolio() {
                     {job.location && <div>{job.location}</div>}
                   </div>
                 </div>
-                <ul className="mt-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-neutral-700 marker:text-neutral-400">
-                  {job.bullets.map((b, i) => (
-                    <li key={i}>{b}</li>
-                  ))}
-                </ul>
+                <p className="mt-4 text-[15px] leading-relaxed text-neutral-700">
+                  {job.bullets[0]}
+                </p>
               </li>
             ))}
           </ol>
+          <div className="mt-10">
+            <Button asChild variant="ghost">
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-4 w-4" />
+                View resume
+              </a>
+            </Button>
+          </div>
         </section>
 
         <hr className="border-neutral-200" />
