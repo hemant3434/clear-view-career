@@ -130,12 +130,6 @@ function Portfolio() {
                 LinkedIn
               </a>
             </Button>
-            <Button asChild variant="ghost">
-              <a href="/resume.pdf" download>
-                <FileDown className="h-4 w-4" />
-                Download resume
-              </a>
-            </Button>
           </div>
         </section>
 
