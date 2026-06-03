@@ -26,16 +26,16 @@ export const Route = createFileRoute("/")({
 
 const experience = [
   {
-    company: "Amazon Web Services (AWS)",
+    company: "Amazon Web Services (AWS) / Graph and Key-Value Databases",
     role: "Software Development Engineer",
     dates: "2023 — 2025",
     location: "",
     bullets: [
-      "Build and operate distributed services powering AWS infrastructure at global scale.",
+      "Java, C, Lots of AWS services: DynamoDB, Lambda, API Gateway, CloudFormation, CloudWatch, etc.",
     ],
   },
   {
-    company: "Amazon Web Services (AWS)",
+    company: "Amazon Web Services (AWS) / Graph Databases",
     role: "Software Development Engineer Intern",
     dates: "Summer 2022",
     location: "",
@@ -44,7 +44,7 @@ const experience = [
     ],
   },
   {
-    company: "Shopify",
+    company: "Shopify / Inventory Management",
     role: "Backend Developer Intern",
     dates: "Fall, 2021",
     location: "",
@@ -53,7 +53,7 @@ const experience = [
     ],
   },
   {
-    company: "Flipp",
+    company: "Flipp / Backend Data Ingestion",
     role: "Software Engineer Intern",
     dates: "Winter, 2021",
     location: "",
@@ -62,8 +62,8 @@ const experience = [
     ],
   },
   {
-    company: "Verto Health",
-    role: "Software Engineer Intern",
+    company: "Verto Health / Full-stack Development",
+    role: "Full-stack Developer Intern",
     dates: "Fall, 2020",
     location: "",
     bullets: [
@@ -71,7 +71,7 @@ const experience = [
     ],
   },
   {
-    company: "Royal Bank of Canada",
+    company: "Royal Bank of Canada / DevOps",
     role: "Software Developer Intern",
     dates: "Winter 2020",
     location: "",
@@ -136,14 +136,16 @@ function Portfolio() {
           <div className="mt-6 space-y-4 text-[17px] leading-relaxed text-neutral-800">
             <p>
               I'm a software engineer who enjoys building systems people depend
-              on. My focus is on writing clear code, designing for reliability,
-              and shipping work that holds up in production.
+              on. My focus is on writing scalable and highly avaialable 
+              backend distributed systems. I graudated from University of Toronto 
+              with a bachelor's degree in computer science and worked as a Teaching assistant
+              for software engineering courses.
             </p>
             <p>
-              Across roles at AWS, Shopify, Flipp, Verto Health, and RBC, I've
+              In my professional career so far, I have worked across roles at AWS, Shopify, Flipp, Verto Health, and RBC, I've
               owned features end-to-end — from design and implementation to
               deployment and on-call — and worked closely with product, design,
-              and other engineers to deliver impact for customers
+              and other engineers to deliver impact for customers. 
             </p>
           </div>
         </section>
