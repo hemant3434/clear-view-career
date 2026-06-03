@@ -183,11 +183,9 @@ function Portfolio() {
                     {job.location && <div>{job.location}</div>}
                   </div>
                 </div>
-                <ul className="mt-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-neutral-700 marker:text-neutral-400">
-                  {job.bullets.map((b, i) => (
-                    <li key={i}>{b}</li>
-                  ))}
-                </ul>
+                <p className="mt-4 text-[15px] leading-relaxed text-neutral-700">
+                  {job.bullets[0]}
+                </p>
               </li>
             ))}
           </ol>
