@@ -31,7 +31,12 @@ const experience = [
     dates: "2023 — 2025",
     location: "",
     bullets: [
-      "Java, C, Lots of AWS services: DynamoDB, Lambda, API Gateway, CloudFormation, CloudWatch, etc.",
+      <>Java, C, React/JavaScript, Docker, Lots of AWS services: DynamoDB,
+      Lambda, API Gateway, CloudFormation, CloudWatch, 
+      etc.<br></br><br></br>
+      Notable Products I helped ship: <a href="https://aws.amazon.com/blogs/aws/introducing-amazon-neptune-analytics-a-high-performance-graph-analytics/" target="_blank" className="text-neutral-900 hover:underline">Neptune Analytics Launch, </a>
+      <a href="https://aws.amazon.com/blogs/database/use-amazon-neptune-analytics-to-analyze-relationships-in-your-data-faster-part-1-introducing-parquet-and-csv-import-and-export/" target="_blank" className="text-neutral-900 hover:underline">Neptune Analytics Export Feature</a>
+      </>
     ],
   },
   {
@@ -40,7 +45,7 @@ const experience = [
     dates: "Summer 2022",
     location: "",
     bullets: [
-      "Designed and shipped a backend service used by internal teams to streamline a manual workflow.",
+      <>Java, Python, Shell scripting in Bash</>
     ],
   },
   {
@@ -49,7 +54,7 @@ const experience = [
     dates: "Fall, 2021",
     location: "",
     bullets: [
-      "Built backend features in Ruby on Rails supporting merchant-facing commerce flows.",
+      <>Ruby on Rails, React, SQL (MySQL), GraphQL</>
     ],
   },
   {
@@ -58,7 +63,7 @@ const experience = [
     dates: "Winter, 2021",
     location: "",
     bullets: [
-      "Delivered new features across the consumer shopping app used by millions of users.",
+      <>Ruby on Rails, SQL (PostgreSQL), Kafka, Vanilla HTML/JavaScript</>
     ],
   },
   {
@@ -67,7 +72,7 @@ const experience = [
     dates: "Fall, 2020",
     location: "",
     bullets: [
-      "Developed healthcare workflow tooling used by clinicians during the COVID-19 response.",
+      <>Angular/TypeScript, Ruby on Rails, SQL (PostgreSQL), Python</>
     ],
   },
   {
@@ -76,7 +81,16 @@ const experience = [
     dates: "Winter 2020",
     location: "",
     bullets: [
-      "Contributed to internal banking platforms with a focus on data accuracy and automation.",
+      <>Java, Jenkins CI/CD</>
+    ],
+  },
+  {
+    company: "Staples Canada",
+    role: "Sales Associate",
+    dates: "2017 - 2019",
+    location: "",
+    bullets: [
+      <p>First "real" Job :) where I learned a lot of soft skills while talking to lots of people</p>
     ],
   },
 ];
@@ -108,15 +122,16 @@ function Portfolio() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">
             I build reliable & scalable backend systems. Previously a SDE at AWS
-            building infrastructure/systems for AWS graph & key-value databases
+            building infrastructure/systems for graph & key-value databases
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild>
-              <a href="mailto:hemant.bhanot01@gmail.com">
-                <Mail className="h-4 w-4" />
-                Email me
+              <a
+                href="mailto:hemant.bhanot01@gmail.com"
+                className="inline-flex items-center gap-2 text-neutral-900 underline underline-offset-4 hover:text-neutral-600"
+              >
+              <Mail className="h-4 w-4" />
+                hemant.bhanot01@gmail.com
               </a>
-            </Button>
             <Button asChild variant="outline">
               <a href="https://www.linkedin.com/in/hemant-bhanot/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
@@ -136,8 +151,8 @@ function Portfolio() {
           <div className="mt-6 space-y-4 text-[17px] leading-relaxed text-neutral-800">
             <p>
               I'm a software engineer who enjoys building systems people depend
-              on. My focus is on writing scalable and highly avaialable 
-              backend distributed systems. I graudated from University of Toronto 
+              on. My focus is on writing scalable and highly available 
+              backend distributed systems. I graduated from University of Toronto 
               with a bachelor's degree in computer science and worked as a Teaching assistant
               for software engineering courses.
             </p>
@@ -159,13 +174,13 @@ function Portfolio() {
           </h2>
           <div className="mt-6">
             <Button asChild variant="ghost">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/Hemant-Bhanot-Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4" />
                 View Resume
               </a>
             </Button>
           </div>
-          <ol className="mt-10 space-y-12">
+          <ol className="mt-10 space-y-8">
             {experience.map((job) => (
               <li key={`${job.company}-${job.dates}`}>
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
@@ -205,7 +220,11 @@ function Portfolio() {
                 Distinction
               </p>
               <p className="text-sm text-neutral-600">
-                Teaching Assistant for <a href="https://utsc.calendar.utoronto.ca/course/cscc01h3" target="_blank">Intro to Software Engineering (CSCC01)</a> and <a href="https://utsc.calendar.utoronto.ca/course/cscd01h3" target="_blank">Engineering Large Software Systems (CSCD01)</a>
+                Teaching Assistant for <a href="https://utsc.calendar.utoronto.ca/course/cscc01h3" target="_blank" className="text-neutral-900 underline">
+                  Intro to Software Engineering (CSCC01)
+                </a> and <a href="https://utsc.calendar.utoronto.ca/course/cscd01h3" target="_blank" className="text-neutral-900 underline">
+                  Engineering Large Software Systems (CSCD01)
+                </a>
               </p>
             </div>
             <div className="text-sm text-neutral-500 sm:text-right">
