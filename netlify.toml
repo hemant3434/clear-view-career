@@ -1,10 +1,13 @@
 [build]
   command = "npm run build"
-  publish = "dist/client"
+  publish = "dist"
 
 [build.environment]
-  DEPLOY_TARGET = "netlify"
   NODE_VERSION = "20"
 
-# Nitro's `netlify` preset emits the SSR function and a _redirects file into
-# the publish directory, so no extra [[redirects]] rules are needed here.
+# SPA fallback: every unknown path returns index.html so the client router
+# can resolve the URL. Also defined in public/_redirects.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
