@@ -3,24 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Hemant Bhanot — Software Engineer" },
-      {
-        name: "description",
-        content:
-          "Hemant Bhanot is a software engineer with experience at AWS, Shopify, Flipp, and RBC. Building reliable, scalable systems.",
-      },
-      { property: "og:title", content: "Hemant Bhanot — Software Engineer" },
-      {
-        property: "og:description",
-        content:
-          "Software engineer with experience at AWS, Shopify, Flipp, and RBC. Building reliable, scalable systems.",
-      },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
   component: Portfolio,
 });
 
