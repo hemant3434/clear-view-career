@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+[build.environment]
+  DEPLOY_TARGET = "netlify"
+  NODE_VERSION = "20"
+
+# Nitro's `netlify` preset emits the SSR function and a _redirects file into
+# the publish directory, so no extra [[redirects]] rules are needed here.
