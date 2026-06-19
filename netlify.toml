@@ -11,3 +11,10 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Cache control for public folder assets: always revalidate with server
+[[headers]]
+  for = "/public/*"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+    Pragma = "no-cache"
