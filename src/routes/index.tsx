@@ -156,7 +156,7 @@ function Portfolio() {
           </h2>
           <div className="mt-6">
             <Button asChild variant="ghost">
-              <a href="/Hemant-Bhanot-Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/Hemant-Bhanot-Resume.pdf?v=2" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4" />
                 View Resume
               </a>
