@@ -12,8 +12,8 @@
   to = "/index.html"
   status = 200
 
-# Cache control for public folder assets: prevent caching entirely
+# Cache control for PDF files: prevent caching
 [[headers]]
-  for = "/public/*"
+  for = "/*.pdf"
   [headers.values]
     Cache-Control = "no-store"
